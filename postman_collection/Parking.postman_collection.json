@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "524787d6-80a0-4606-a7b5-aead2449f6ef",
+		"name": "Parking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7395100"
+	},
+	"item": [
+		{
+			"name": "getAllParking",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 2|jRDZGYGjioNLF1wOuxnf3rJKSgLlQzJftsByFjon289f6df2",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/parkings",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parkings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createOrUpdateParking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|YOF9VY3o5FtkbeYU5hikskK5s85ClbpB5cYWR1bQb0cc30ed",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"car_number\": \"F 1234 CAB\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/parking",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"parking"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
